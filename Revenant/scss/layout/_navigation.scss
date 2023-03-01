@@ -1,0 +1,11 @@
+.nav-link {
+  display: block;
+  padding: 1.5rem;
+  &:hover {
+    background-color: #f7f7f7;
+    color: $color-primary;
+    border-top: 3px solid #9d9d9d;
+    border-bottom: 3px solid #9d9d9d;
+    cursor: pointer;
+  }
+}

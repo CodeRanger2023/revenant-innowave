@@ -1,0 +1,84 @@
+.banner {
+  background: url('../../images/slideshowFull3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 0;
+
+  p {
+    width: 55%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.quote {
+  p {
+    font-size: 14px;
+    font-family: 'Museo Sans';
+    font-weight: 500;
+    color: $text-grey;
+  }
+}
+
+.featured {
+  background: $bg-light;
+  p {
+    font-size: 11px;
+    // line-height: 18px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__rounded {
+    background-color: $color-white;
+  }
+
+  &__card {
+    border: 0;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 4px solid #ebebeb;
+  }
+}
+
+.comments {
+  p {
+    font-size: 13px;
+    color: $color-grey;
+    font-style: italic;
+    font-family: 'Museo Sans';
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.latest {
+  &__info {
+    display: inline-block;
+  }
+}
+
+.position-absolute {
+  top: 15px;
+  left: 10px;
+
+  p {
+    font-size: 11px;
+    padding: 6px 20px;
+    color: $color-white;
+    font-family: 'Museo Sans';
+    font-weight: 500;
+  }
+}

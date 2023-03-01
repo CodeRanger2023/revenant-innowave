@@ -1,0 +1,51 @@
+.footer {
+  @media only screen and (max-width: 768px) {
+    padding: 0 !important;
+  }
+  &__upper {
+    @media only screen and (max-width: 768px) {
+      .col-10 {
+        border: 0 !important;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-family: 'Museo Sans';
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__links {
+    a {
+      color: $text-grey;
+      text-transform: uppercase;
+    }
+  }
+
+  &__copy {
+    p {
+      color: $text-grey;
+      font-size: 12px;
+      font-family: 'Museo Sans';
+      font-weight: 500;
+    }
+  }
+}
+
+.search-input {
+  color: $color-white;
+  background-color: transparent;
+  border: none;
+  border: 2px solid $color-white;
+  width: 300px;
+
+  &::placeholder {
+    color: $color-white;
+  }
+}
+
+.search-btn {
+  color: bg-info;
+  background-color: $color-white;
+}
